@@ -181,7 +181,7 @@ namespace SqlGIS.Controllers
         public ViewResult EditHotel(int ID)
         {
             Hotel hotel = repository.Hotels
-                                        .FirstOrDefault(p => p.Id == ID);
+                                    .FirstOrDefault(p => p.Id == ID);
             return View(hotel);
         }
 
@@ -228,7 +228,7 @@ namespace SqlGIS.Controllers
         public ViewResult EditTrip(int ID)
         {
             Trip trip = repository.Trips
-                                        .FirstOrDefault(p => p.Id == ID);
+                                  .FirstOrDefault(p => p.Id == ID);
                 ViewBag.Countries = new SelectList(repository.Countrys, "Id", "Name");
 
             return View(trip);
