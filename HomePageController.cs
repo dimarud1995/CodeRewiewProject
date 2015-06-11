@@ -66,7 +66,7 @@ namespace SqlGIS.Controllers
                             Address = c.Address,
                             Desctirption = c.Description,
                             Category = c.Category
-                        });
+                        }); //невизначена змінна hotels
                     hot.Add(hotels.First());
                 }
                 return Json(hot, JsonRequestBehavior.AllowGet);
